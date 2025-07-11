@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Find Your Perfect Match</title>
+  <style>
+    body {
+      margin: 0; 
+      padding: 0; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh;
+      color: #fff;
+    }
+    .container {
+      background: rgba(0,0,0,0.5);
+      padding: 40px 30px;
+      border-radius: 12px;
+      max-width: 400px;
+      width: 90%;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    p {
+      margin-bottom: 30px;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    input[type="email"] {
+      width: 100%;
+      padding: 14px 15px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+    input[type="email"]:focus {
+      outline: none;
+      box-shadow: 0 0 8px #ff7eb3;
+    }
+    button {
+      background: #ff4081;
+      border: none;
+      padding: 14px 20px;
+      width: 100%;
+      border-radius: 6px;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #e03574;
+    }
+    small {
+      display: block;
+      margin-top: 15px;
+      font-size: 0.8rem;
+      color: #ffb6c1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Find Your Perfect Match</h1>
+    <p>Subscribe now and get exclusive dating tips, success stories, and special offers directly to your inbox!</p>
+
+    <!-- Netlify Form -->
+    <form name="dating-form" method="POST" data-netlify="true">
+      <input type="email" name="email" placeholder="Enter your email address" required />
+      <button type="submit">Get Started</button>
+    </form>
+
+    <small>We respect your privacy. Unsubscribe anytime.</small>
+  </div>
+</body>
+</html>
